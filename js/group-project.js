@@ -12,7 +12,14 @@ $("#question").keypress(function(event) {
 
 $("#ask").click(function() {
     var question = $("#question").val();
-    var yesOrNo = Math.random() < 0.5 ? 'Yes' : 'No';
-    $("#output").html('<div class="text"><p>' + question + "<br />" + yesOrNo + '</p></div>');
     $("#question").val('');
+    $("#prompt").hide();
+    $("#main-page").show();
+    $("#main-page").append('<div class="text"><p>' + question + '</p></div>');
+});
+
+$("#back").click(function() {
+    $(".text").remove();
+    $("#main-page").hide();
+    $("#intro").show();
 });

@@ -30,3 +30,17 @@
     background-image: url(""); /* Hover image */
 }
 
+#main-page {
+    display: none;
+    text-align: center;
+}
+
+#back {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.text {
+    font-size: 72pt;
+}
