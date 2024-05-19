@@ -1,3 +1,9 @@
+
+$("#enter").click(function() {
+    $("#intro").hide();
+    $("#prompt").show();
+});
+
 $("#question").keypress(function(event) {
     if (event.key === 'Enter') {
         $("#ask").click();
