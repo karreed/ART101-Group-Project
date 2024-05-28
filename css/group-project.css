@@ -22,18 +22,18 @@
     text-align: center;
 }
 
-#enter {
+/* #enter {
     width: 100px;
     height: 50px;
-    background-image: url("default.png"); /* Default image */
+    background-image: url("");
     background-size: cover;
     border: none;
     cursor: pointer;
 }
 
 #enter:hover {
-    background-image: url("hover.png"); /* Hover image */
-}
+    background-image: url("");
+} */
 
 #ask {
     font-family: 'Courier New', Courier, monospace;
@@ -59,12 +59,7 @@ body {
     background-color: #EDC79B;
 }
 
-#flower {
-    background: none;
-    border: none;
-}
-
-#daisy {
+#flowerButton img{
     background: none;
     border: none;
     cursor: pointer;
