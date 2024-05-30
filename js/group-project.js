@@ -4,9 +4,15 @@ const sunflower = ["sunflower/sun1.png", "sunflower/sun2.png", "sunflower/sun3.p
 
 const bird = ["bird/bird1.PNG", "bird/bird2.PNG", "bird/bird3.PNG", "bird/bird4.PNG", "bird/bird5.PNG", "bird/bird6.PNG", "bird/bird7.PNG", "bird/bird8.PNG", "bird/bird9.PNG"]
 
+const poppy = ["poppy/poppy1.png", "poppy/poppy2.png", "poppy/poppy3.png", "poppy/poppy4.png", "poppy/poppy5.png", "poppy/poppy6.png"]
+
+const death = ["deathcamas/deathcamas1.png", "deathcamas/deathcamas2.png", "deathcamas/deathcamas3.png", "deathcamas/deathcamas4.png", "deathcamas/deathcamas5.png", "deathcamas/deathcamas6.png", "deathcamas/deathcamas7.png", "deathcamas/deathcamas8.png", "deathcamas/deathcamas9.png", "deathcamas/deathcamas10.png", "deathcamas/deathcamas11.png", "deathcamas/deathcamas12.png"]
+
+const tulip = ["tulip/tulip1.png", "tulip/tulip2.png", "tulip/tulip3.png", "tulip/tulip4.png", "tulip/tulip5.png", "tulip/tulip6.png", "tulip/tulip7.png"]
+
 var i = 0;
 var yesNo = Math.random() < 0.5;
-var flowers = [daisies, sunflower, bird];
+var flowers = [daisies, sunflower, bird, poppy, death, tulip];
 
 function randomFlower(array) {
     var randomFlower = Math.floor(Math.random() * array.length);
