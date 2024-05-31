@@ -10,9 +10,11 @@ const death = ["deathcamas/deathcamas1.png", "deathcamas/deathcamas2.png", "deat
 
 const tulip = ["tulip/tulip1.png", "tulip/tulip2.png", "tulip/tulip3.png", "tulip/tulip4.png", "tulip/tulip5.png", "tulip/tulip6.png"]
 
+const iris = ["iris/iris1.png", "iris/iris2.png", "iris/iris3.png", "iris/iris4.png", "iris/iris5.png", "iris/iris6.png", "iris/iris7.png", "iris/iris8.png", "iris/iris9.png", "iris/iris10.png"]
+
 var i = 0;
 var yesNo = Math.random() < 0.5;
-var flowers = [daisies, sunflower, bird, poppy, death, tulip];
+var flowers = [daisies, sunflower, bird, poppy, death, tulip, iris];
 
 function randomFlower(array) {
     var randomFlower = Math.floor(Math.random() * array.length);
