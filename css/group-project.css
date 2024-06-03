@@ -20,14 +20,14 @@
 #enter {
     width: 100px;
     height: 50px;
-    background-image: url(""); /* Default image */
+    background-image: url("/img/buttonRegular.png"); /* Default image */
     background-size: cover;
     border: none;
     cursor: pointer;
 }
 
 #enter:hover {
-    background-image: url(""); /* Hover image */
+    background-image: url("/img/buttonExpanded.png"); /* Hover image */
 }
 
 #main-page {
