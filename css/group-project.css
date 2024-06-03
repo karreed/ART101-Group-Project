@@ -17,30 +17,51 @@
     text-align: center;
 }
 
-#enter {
+#main-page {
+    display: none;
+    text-align: center;
+}
+
+/* #enter {
     width: 100px;
     height: 50px;
-    background-image: url(""); /* Default image */
+    background-image: url("");
     background-size: cover;
     border: none;
     cursor: pointer;
 }
 
 #enter:hover {
-    background-image: url(""); /* Hover image */
-}
+    background-image: url("");
+} */
 
-#main-page {
-    display: none;
-    text-align: center;
+#ask {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #back {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .text {
-    font-size: 72pt;
+    font-size: 64pt;
+}
+
+.yesOrNO {
+    font-size: 64pt;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #EDC79B;
+}
+
+#flowerButton img{
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 500px;
 }
