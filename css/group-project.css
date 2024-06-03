@@ -4,7 +4,15 @@
 
 #intro{
     margin-top: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
+    border-radius: 25px;
+    background-color: #ed942dae;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+  
 }
 
 #prompt{
@@ -21,6 +29,8 @@
     display: none;
     text-align: center;
 }
+
+/* syds button mashing, unsure if this is totally conventional but it works!*/
 
 #enter {
     width: 200px;
@@ -40,6 +50,39 @@
 
 #ask {
     font-family: 'Courier New', Courier, monospace;
+    background-image: url("button/button-blank.png") ;
+    width: 65px;
+    height: 35px;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#ask:hover {
+    width: 65px;
+    height: 50px;
+    background-image: url("button/button-expanded.png");
+}
+
+.button::after {
+    content: "ask!";
+    /* if anyone can figure out how to scoot the text up 
+    by a few px so its centered in the button
+    that would be great! i have tried to no avail */
+}
+.button:hover::after {
+    content: "  ";
+}
+
+/* back to normal programming */ 
+
+#question { 
+   background-color: rgb(210, 251, 202);
+   width: 50%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: content-box;
 }
 
 #back {

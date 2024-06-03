@@ -45,6 +45,11 @@ $("#question").keypress(function(event) {
     }
 });
 
+$("#ask").hover(function() {
+    
+}
+)
+
 $("#ask").click(function() {
     var question = $("#question").val();
     $("#prompt").hide();
@@ -81,3 +86,4 @@ $("#back").click(function() {
     chosenFlower = randomFlower(flowers);
     yesNo = Math.random() < 0.5;
 });
+
