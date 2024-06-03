@@ -22,17 +22,18 @@
     text-align: center;
 }
 
-/* #enter {
+#enter { 
     width: 100px;
     height: 50px;
-    background-image: url("");
+    background-image: url("/button/buttonRegular.PNG");
     background-size: cover;
     border: none;
+    text-align: center; /* Center the text within the button */
     cursor: pointer;
 }
 
 #enter:hover {
-    background-image: url("");
+    background-image: url("/button/buttonExpanded.PNG");
 } */
 
 #ask {
