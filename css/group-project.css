@@ -22,19 +22,21 @@
     text-align: center;
 }
 
-#enter { 
-    width: 100px;
-    height: 50px;
-    background-image: url("/button/buttonRegular.PNG");
+#enter {
+    width: 200px;
+    height: 120px;
+    background-image: url("button/button-regular.png");
     background-size: cover;
+    background-color: transparent;
     border: none;
-    text-align: center; /* Center the text within the button */
     cursor: pointer;
 }
 
 #enter:hover {
-    background-image: url("/button/buttonExpanded.PNG");
-} */
+    width: 155px;
+    height: 120px;
+    background-image: url("button/button-expanded.png");
+} 
 
 #ask {
     font-family: 'Courier New', Courier, monospace;
