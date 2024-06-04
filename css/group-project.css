@@ -13,6 +13,7 @@ document, body {
     text-align: center;
     background: url(https://art.pixilart.com/sr2f745bc58f2aws3.gif) no-repeat center center fixed; 
     padding: 10px;
+    background-size: cover;
 }
 
 #background2 {  
@@ -21,6 +22,7 @@ document, body {
     text-align: center;
     background: url(https://art.pixilart.com/sr21363031375aws3.png) no-repeat center center fixed; 
     padding: 10px;
+    background-size: cover;
 }
 
 #intro {
