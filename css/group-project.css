@@ -1,3 +1,8 @@
+document, body {
+    margin: 0;
+    padding: 0;
+}
+
 .h1 {
     font-size: 72pt;
 }
@@ -80,8 +85,8 @@
 
 .button::after {
     content: "ask!";
-    font-size: larger;
-    font-style: bold;
+    font-size: large;
+    font-style: bolder;
     /* if anyone can figure out how to scoot the text up 
     by a few px so its centered in the button
     that would be great! i have tried to no avail */
@@ -100,6 +105,8 @@
    color: white;
    border-radius: 25%;
    font-size: larger;
+   border-color: #462909;
+   border-width: 5px;
    font-family: 'Courier New', Courier, monospace;
 }
 
