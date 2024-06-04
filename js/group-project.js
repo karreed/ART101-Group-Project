@@ -8,7 +8,7 @@ const poppy = ["poppy/poppy1.png", "poppy/poppy2.png", "poppy/poppy3.png", "popp
 
 const death = ["deathcamas/deathcamas1.png", "deathcamas/deathcamas2.png", "deathcamas/deathcamas3.png", "deathcamas/deathcamas4.png", "deathcamas/deathcamas5.png", "deathcamas/deathcamas6.png", "deathcamas/deathcamas7.png", "deathcamas/deathcamas8.png", "deathcamas/deathcamas9.png", "deathcamas/deathcamas10.png", "deathcamas/deathcamas11.png", "deathcamas/deathcamas12.png"]
 
-const tulip = ["tulip/tulip1.png", "tulip/tulip2.png", "tulip/tulip3.png", "tulip/tulip4.png", "tulip/tulip5.png", "tulip/tulip6.png"]
+const tulip = ["tulip/tulip1.png", "tulip/tulip2.png", "tulip/tulip3.png", "tulip/tulip4.png", "tulip/tulip5.png", "tulip/tulip6.png", "tulip/tulip7.png", "tulip/tulip8.png"]
 
 const iris = ["iris/iris1.png", "iris/iris2.png", "iris/iris3.png", "iris/iris4.png", "iris/iris5.png", "iris/iris6.png", "iris/iris7.png", "iris/iris8.png", "iris/iris9.png", "iris/iris10.png"]
 
