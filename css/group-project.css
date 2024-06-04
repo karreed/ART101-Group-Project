@@ -2,17 +2,23 @@
     font-size: 72pt;
 }
 
-#intro{
-    margin-top: 25%;
+#background1 {  
+    height: 600px;
+    width: 1200px;
+    text-align: center;
+    border-radius: 100px;
+    background: url(https://art.pixilart.com/sr2f745bc58f2aws3.gif) no-repeat center center fixed; 
+    padding: 20px;
+}
+
+#intro {
+    margin-top: 5%;
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 100px;
     background-color: #ed942dae;
-    background-position: left top;
-    background-repeat: repeat;
     padding: 20px;
-  
 }
 
 #prompt{
@@ -78,11 +84,10 @@
 /* back to normal programming */ 
 
 #question { 
-   background-color: rgb(210, 251, 202);
+   background-color:#325a24a8;
    width: 50%;
    padding: 12px 20px;
    margin: 8px 0;
-   box-sizing: content-box;
 }
 
 #back {
