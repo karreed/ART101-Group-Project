@@ -23,12 +23,16 @@ function randomFlower(array) {
 
 var chosenFlower = randomFlower(flowers);
 
+(function () {
+    $("#background2").hide();
+})();
+
 $(document).keydown(function(event) {
     if (event.key ==='Enter') {
         if ($("#intro").is(':visible')) {
             $("#enter").click();
             event.preventDefault();
-        }
+        }  
     }
 });
 
