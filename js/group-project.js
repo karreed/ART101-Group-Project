@@ -34,6 +34,7 @@ $(document).keydown(function(event) {
 
 $("#enter").click(function() {
     $("#intro").hide();
+    $("#background1").hide();
     $("#prompt").show();
     $("#question").focus();
 });
