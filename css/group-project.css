@@ -10,6 +10,14 @@
     padding: 10px;
 }
 
+#background2 {  
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: url(https://art.pixilart.com/sr21363031375aws3.png) no-repeat center center fixed; 
+    padding: 10px;
+}
+
 #intro {
     margin-top: 15%;
     margin-left: 25%;
@@ -72,6 +80,8 @@
 
 .button::after {
     content: "ask!";
+    font-size: larger;
+    font-style: bold;
     /* if anyone can figure out how to scoot the text up 
     by a few px so its centered in the button
     that would be great! i have tried to no avail */
@@ -83,10 +93,14 @@
 /* back to normal programming */ 
 
 #question { 
-   background-color:#325a24a8;
+   background-color:#e39a68a8;
    width: 50%;
-   padding: 12px 20px;
+   padding: 20px;
    margin: 8px 0;
+   color: white;
+   border-radius: 25%;
+   font-size: larger;
+   font-family: 'Courier New', Courier, monospace;
 }
 
 #back {

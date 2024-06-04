@@ -35,6 +35,7 @@ $(document).keydown(function(event) {
 $("#enter").click(function() {
     $("#intro").hide();
     $("#background1").hide();
+    $("#background2").show();
     $("#prompt").show();
     $("#question").focus();
 });
@@ -54,6 +55,7 @@ $("#ask").hover(function() {
 $("#ask").click(function() {
     var question = $("#question").val();
     $("#prompt").hide();
+    $("#background2").hide();
     $("#main-page").show();
     $("#main-page").append('<div class="text"><p>' + question + '</p></div>');
     $("#main-page").append('<div class="yesOrNo">' + (yesNo ? "Yes" : "No") + '</div>');
