@@ -83,6 +83,7 @@ $("#back").click(function() {
     $(".yesOrNo").remove();
     $("#main-page").hide();
     $("#intro").show();
+    $("#background1").show();
     $("#chosenFlower").show();
     chosenFlower = randomFlower(flowers);
     yesNo = Math.random() < 0.5;
