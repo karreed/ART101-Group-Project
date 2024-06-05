@@ -2,7 +2,7 @@ const daisies = ["daisies/daisy1.png", "daisies/daisy2.png", "daisies/daisy3.png
 
 const sunflower = ["sunflower/sun1.png", "sunflower/sun2.png", "sunflower/sun3.png", "sunflower/sun4.png", "sunflower/sun5.png", "sunflower/sun6.png", "sunflower/sun7.png", "sunflower/sun8.png", "sunflower/sun9.png", "sunflower/sun10.png", "sunflower/sun11.png", "sunflower/sun12.png", "sunflower/sun13.png", "sunflower/sun14.png", "sunflower/sun15.png", "sunflower/sun16.png", "sunflower/sun17.png"]
 
-const bird = ["bird/bird1.PNG", "bird/bird2.PNG", "bird/bird3.PNG", "bird/bird4.PNG", "bird/bird5.PNG", "bird/bird6.PNG", "bird/bird7.PNG", "bird/bird8.PNG", "bird/bird9.PNG"]
+const bird = ["bird/bird1.png", "bird/bird2.png", "bird/bird3.png", "bird/bird4.png", "bird/bird5.png", "bird/bird6.png", "bird/bird7.png", "bird/bird8.png", "bird/bird9.png"]
 
 const poppy = ["poppy/poppy1.png", "poppy/poppy2.png", "poppy/poppy3.png", "poppy/poppy4.png", "poppy/poppy5.png", "poppy/poppy6.png"]
 
@@ -22,6 +22,45 @@ function randomFlower(array) {
 }
 
 var chosenFlower = randomFlower(flowers);
+
+var daisyInfo = "daisies are bright";
+var sunflowerInfo = "sunflowers are yellow";
+var birdInfo = "Look like bird";
+var poppyInfo = "they be poppin";
+var deathInfo = "Look pretty";
+var tulipInfo = "my mom's fav";
+var irisInfo = "kinda like the one in your eye";
+
+function getFlowerInfo() {
+    if (chosenFlower === daisies) {
+        return daisyInfo;
+    } else if (chosenFlower === sunflower) {
+        return sunflowerInfo
+    } else if (chosenFlower === bird) {
+        return birdInfo;
+    } else if (chosenFlower === poppy) {
+        return poppyInfo;
+    } else if (chosenFlower === death) {
+        return deathInfo;
+    } else if (chosenFlower === tulip) {
+        return tulipInfo;
+    } else if (chosenFlower === iris) {
+        return irisInfo;
+    }
+};
+
+var info = getFlowerInfo();
+
+$("#ask").click(function() {
+    var question = $("#question").val();
+    $("#prompt").hide();
+    $("#background2").hide();
+    $("#main-page").show();
+    $("#main-page").append('<div class="text"><p>' + question + '</p></div>');
+    $("#main-page").append('<div class="yesOrNo">' + (yesNo ? "Yes" : "No") + '</div>');
+    $("#main-page").append('<div class="flowerInfo"><p>' + info + '</p></div>'); //add this line
+    $("#chosenFlower").attr('src', chosenFlower[0]);
+});
 
 (function () {
     $("#background2").hide();
@@ -56,16 +95,6 @@ $("#ask").hover(function() {
 }
 )
 
-$("#ask").click(function() {
-    var question = $("#question").val();
-    $("#prompt").hide();
-    $("#background2").hide();
-    $("#main-page").show();
-    $("#main-page").append('<div class="text"><p>' + question + '</p></div>');
-    $("#main-page").append('<div class="yesOrNo">' + (yesNo ? "Yes" : "No") + '</div>');
-    $("#chosenFlower").attr('src', chosenFlower[0]);
-});
-
 $(document).keydown(function(event) {
     if (event.key === 'Backspace' || event.key === 'Escape') {
         if ($("#main-page").is(':visible')) {
@@ -87,11 +116,13 @@ $("#chosenFlower").click(function() {
 $("#back").click(function() {
     $(".text").remove();
     $(".yesOrNo").remove();
+    $(".flowerInfo").remove(); //add this line
     $("#main-page").hide();
     $("#intro").show();
     $("#background1").show();
     $("#chosenFlower").show();
     chosenFlower = randomFlower(flowers);
+    info = getFlowerInfo(); //add this line
     yesNo = Math.random() < 0.5;
 });
 
