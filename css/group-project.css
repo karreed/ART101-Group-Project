@@ -57,8 +57,9 @@ document, body {
 #main-page {
     display: none;
     text-align: center;
+    font-size: 20pt;
 }
-
+/* #main-page controls the yesOrNo text CSS as well
 /* syds button mashing, unsure if this is totally conventional but it works!*/
 
 #enter {
@@ -143,7 +144,11 @@ document, body {
 }
 
 .text {
-    font-size: 64pt;
+    font-size: 32pt;
+    top:0;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
 }
 
 .yesOrNO {
