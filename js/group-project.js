@@ -123,6 +123,7 @@ $("#back").click(function() {
     $("#intro").show();
     $("#background1").show();
     $("#chosenFlower").show();
+    $("#question").val('');
     chosenFlower = randomFlower(flowers);
     info = getFlowerInfo(); //add this line
     yesNo = Math.random() < 0.5;
