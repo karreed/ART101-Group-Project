@@ -166,8 +166,6 @@ body {
     bottom: 10px;
     right: 10px;
     font-family: 'Courier New', Courier, monospace;
-}
-#back {
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
     --color: #373B44;
@@ -188,13 +186,17 @@ body {
 }
 #back:hover,
 #back:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
+    --_p: 0px;
+     outline-color: var(--color);
+     outline-offset: .05em;
 }
 
 #back:active {
-  background: var(--color);
-  color: #fff;
+    background: var(--color);
+    color: #fff;
 }
 
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
