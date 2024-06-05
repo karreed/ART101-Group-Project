@@ -57,10 +57,10 @@ document, body {
 #main-page {
     display: none;
     text-align: center;
-    font-size: 20pt;
+    font-size: 20pt; /* font size for the yes/no*/
     padding-bottom: 50px;
 }
-/* #main-page controls the yesOrNo text CSS as well
+/* #main-page controls the yesOrNo text CSS as well*/
 /* syds button mashing, unsure if this is totally conventional but it works!*/
 
 #enter {
@@ -145,7 +145,7 @@ document, body {
 }
 
 .text {
-    font-size: 32pt;
+    font-size: 28pt;
     top:0;
     padding-left: 50px;
     padding-right: 50px;
@@ -165,7 +165,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 25%; 
     bottom: 90%;
 }
 
@@ -187,5 +187,16 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+}
+#back:hover,
+#back:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+#back:active {
+  background: var(--color);
+  color: #fff;
 }
 
