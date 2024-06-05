@@ -165,8 +165,6 @@ body {
     border: none;
     cursor: pointer;
     width: 500px;
-    position: absolute;
-    bottom: 0;
 }
 
 #back {
