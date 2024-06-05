@@ -7,6 +7,11 @@ document, body {
     font-size: 72pt;
 }
 
+.h2 {
+    font-size: 72pt;
+    margin-bottom: 10px;
+}
+
 #background1 {  
     height: 100vh;
     width: 100vw;
@@ -38,7 +43,10 @@ document, body {
 #prompt{
     display: none;
     margin-top: 25%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #output{
@@ -77,6 +85,10 @@ document, body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #ask:hover {
@@ -88,30 +100,38 @@ document, body {
 .button::after {
     content: "ask!";
     font-size: large;
-    font-style: bolder;
-    line-height: 1px !important;
-    padding: 8px !important;
-    /* if anyone can figure out how to scoot the text up 
-    by a few px so its centered in the button
-    that would be great! i have tried to no avail */
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 .button:hover::after {
     content: "  ";
 }
 
 /* back to normal programming */ 
+#input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-#question { 
+#question {
    background-color:#e39a68a8;
    width: 50%;
    padding: 20px;
    margin: 8px 0;
+   margin-right: 10px;
    color: white;
    border-radius: 25%;
    font-size: larger;
    border-color: #462909;
    border-width: 5px;
    font-family: 'Courier New', Courier, monospace;
+   flex: 1;
 }
 
 #back {
