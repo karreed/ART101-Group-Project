@@ -164,7 +164,8 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    width: 500px;
+    width: 20%;
+    bottom: 90%;
 }
 
 #back {
