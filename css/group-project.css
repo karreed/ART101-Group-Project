@@ -137,13 +137,6 @@ document, body {
    flex: 1;
 }
 
-#back {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .text {
     font-size: 28pt;
     top:0;
@@ -168,7 +161,12 @@ body {
     width: 25%; 
     bottom: 90%;
 }
-
+#back {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
 #back {
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
