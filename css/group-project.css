@@ -131,7 +131,7 @@ document, body {
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #EDC79B;
+    background: linear-gradient(to bottom,  #EDC79B 70%, #C8D6AF) no-repeat center center fixed;
 }
 
 #flowerButton img{
@@ -160,3 +160,4 @@ body {
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+
