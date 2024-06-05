@@ -12,6 +12,8 @@ const tulip = ["tulip/tulip1.png", "tulip/tulip2.png", "tulip/tulip3.png", "tuli
 
 const iris = ["iris/iris1.png", "iris/iris2.png", "iris/iris3.png", "iris/iris4.png", "iris/iris5.png", "iris/iris6.png", "iris/iris7.png", "iris/iris8.png", "iris/iris9.png", "iris/iris10.png"]
 
+
+
 var i = 0;
 var yesNo = Math.random() < 0.5;
 var flowers = [daisies, sunflower, bird, poppy, death, tulip, iris];
@@ -105,7 +107,7 @@ $(document).keydown(function(event) {
 
 $("#chosenFlower").click(function() {
     i = (i + 1) % chosenFlower.length;
-    if (i === 0) {
+    if (i == 0) {
         $("#chosenFlower").hide();
     }
     $("#chosenFlower").attr('src', chosenFlower[i]);

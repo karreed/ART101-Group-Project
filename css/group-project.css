@@ -1,10 +1,16 @@
 document, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .h1 {
     font-size: 72pt;
+}
+
+.h2 {
+    font-size: 72pt;
+    margin-bottom: 10px;
 }
 
 #background1 {  
@@ -38,7 +44,10 @@ document, body {
 #prompt{
     display: none;
     margin-top: 25%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #output{
@@ -77,6 +86,10 @@ document, body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #ask:hover {
@@ -88,28 +101,38 @@ document, body {
 .button::after {
     content: "ask!";
     font-size: large;
-    font-style: bolder;
-    /* if anyone can figure out how to scoot the text up 
-    by a few px so its centered in the button
-    that would be great! i have tried to no avail */
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 .button:hover::after {
     content: "  ";
 }
 
 /* back to normal programming */ 
+#input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-#question { 
+#question {
    background-color:#e39a68a8;
    width: 50%;
    padding: 20px;
    margin: 8px 0;
+   margin-right: 10px;
    color: white;
    border-radius: 25%;
    font-size: larger;
    border-color: #462909;
    border-width: 5px;
    font-family: 'Courier New', Courier, monospace;
+   flex: 1;
 }
 
 #back {
@@ -129,7 +152,7 @@ document, body {
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #EDC79B;
+    background: linear-gradient(to bottom,  #EDC79B 70%, #C8D6AF) no-repeat center center fixed;
 }
 
 #flowerButton img{
@@ -138,3 +161,24 @@ body {
     cursor: pointer;
     width: 500px;
 }
+
+#back {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
