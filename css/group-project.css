@@ -196,7 +196,15 @@ body {
     color: #fff;
 }
 
-p {
-    padding-left: 10%;
-    padding-right: 10%;
+#main-page .flowerInfo {
+    font-size: 15px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    border: #462909 dotted 3px;
 }
+
+
