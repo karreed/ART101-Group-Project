@@ -93,10 +93,8 @@ $("#ask").click(function() {
     fetchAnswer();
     $("#main-page").show().append(`
         <div class="text"><p>${question}?</p></div>
-        <div class="yesOrNo"><ul id="yesOrNo"></ul></div>
         <div class="flowerInfo"><ul id="flowerInfoList"></ul></div>
     `);
-    
     getFlowerInfo();
 });
 //syds bullshit, do not pay mindfor

@@ -50,10 +50,6 @@ document, body {
     justify-content: center;
 }
 
-#output{
-    text-align: center;
-}
-
 #main-page {
     display: none;
     padding-bottom: 50px;
@@ -62,8 +58,9 @@ document, body {
 
 #main-page .yesOrNo {
     font-size: 30pt;
-    margin-top: 60%;
-    text-align: right;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 #credits {
@@ -149,22 +146,16 @@ document, body {
 
 .text {
     font-size: 20pt;
-    top:0;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
     display: inline-block;
-    position: absolute;
-    right: 2%;
-    top: 5%;
-    width: 36%;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
 }
 
-.yesOrNO {
-    font-size: 70pt;
-    position: absolute;
-}
-/* when i comment this out, nothing changes, maybe this is not doing anything */
 
 body {
     font-family: 'Courier New', Courier, monospace;
