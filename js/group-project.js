@@ -92,11 +92,16 @@ $("#ask").click(function() {
     $("#prompt, #background2").hide();
     fetchAnswer();
     $("#main-page").show().append(`
-        <div class="text"><p>${question}</p></div>
+        <div class="text"><p>${question}?</p></div>
+        <div class="yesOrNo"><ul id="yesOrNo"></ul></div>
         <div class="flowerInfo"><ul id="flowerInfoList"></ul></div>
     `);
+    
     getFlowerInfo();
 });
+//syds bullshit, do not pay mindfor
+
+
 
 $(document).keydown(function(event) {
     if (event.key ==='Enter') {
