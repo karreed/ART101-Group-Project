@@ -25,13 +25,47 @@ function randomFlower(array) {
 
 var chosenFlower = randomFlower(flowers);
 
-var daisyInfo = "The daisy comes from the old English phrase “daes eage,” or “days eye,” due to how the flower blossoms at the first sign of dawn. Ancient Egyptians have grown these daisies and used them as herbal medicine since early 2200 BC. There are three famous kinds of daisies; the Gerbera daisy, Shasta daisy, and rudbeckia which are seen around a lot. Daisies have a reputation as a low maintenance and long-lasting blooming flower which makes it a favorite for flower lovers everywhere.";
-var sunflowerInfo = "The sunflower, as the most popular plant, no other plant has an impact and significance as the sunflower did. Used by Early Native Americans, made use of its seed before corn and beans were introduced to America while making most of the offerings from the flower. Today, people have and still eat the seeds, ground the kernels into flour, and extract oils for their hair in shampoos and conditioners and for medicine as well. In other parts of the world such as Peru, the Aztecs would worship sunflowers and place images of them made of gold in their temples while crowning their princesses in bright yellow flowers. ";
-var birdInfo = "Birds of Paradise, shaped like a bird on a long petiole, the plant is grown outdoors in warm climates and as a houseplant for its attractive foliage and unusual flowers. It has been grown at the Royal Botanic Gardens in Kew, South Africa since 1773. Named by Sir Joseph Banks, the director of the Royal Gardens, the scientific name of the bird of paradise was Strelitzia reginae. The bird of paradise got its name from the fact that its flower was made of three bright orange petals which are fused into a single bud where they make their debut and shape resulting in the shape of a tropical bird in flight. ";
-var poppyInfo = "The poppy, a native flower of California, this plant was introduced into English gardens in the nineteenth century by Europeans, not only was the poppy a widely cultivated flower and gardens and landscapes for its beauty and resilience, but indigenous people of California revered the California poppy and used it for medicinal purposes, dyeing fabric, and as a mild sedative as well. You can find them on the roadside of Californias as well.";
-var deathInfo = "The Fremonts Deathcamas is a perennial herb that regrows each spring from an underground bulb with linear leaves and is primarily at the base of the plant. The flower is considered a geophyte as it is one of a group of herbaceous plants with storage organs beneath the soil that allow it to survive unfavorable conditions for extended periods. Unlike the other plants mentioned in this document, this plant is the only plant that is not eaten by the Native Americans as any parts of star lily and all other species are formerly in the genus Zigadenus are highly toxic where its only use is reported in anything almost invariably medicinal, occasionally ceremonial. ";
-var tulipInfo = "The tulips are natives of Central Asia and Turkeys and are among the most popular flowers amongst garden flowers with numerous cultivars and varieties that have been developed. They began in Persia (Iran) during the 10th century.";
-var irisInfo = "The iris, A Greek translation for Rainbow, the flower which is another common flower you would find in the garden dates back to ancient Greece and was named after the goddess Iris. This was used to describe the flower that came in many colors. ";
+var daisyInfo = {
+    history: "The daisy comes from the old English phrase “daes eage,” or “days eye,” due to how the flower blossoms at the first sign of dawn. Ancient Egyptians have grown these daisies and used them as herbal medicine since early 2200 BC. There are three famous kinds of daisies; the Gerbera daisy, Shasta daisy, and rudbeckia which are seen around a lot. Daisies have a reputation as a low maintenance and long-lasting blooming flower which makes it a favorite for flower lovers everywhere.",
+    scientificName: "Bellis perennis",
+    colors: "Blue base petals arising from a dark green spathe, topped with an upright fan of bright orange sepals",
+  }
+
+var sunflowerInfo = {
+    history: "The sunflower, as the most popular plant, no other plant has an impact and significance as the sunflower did. Used by Early Native Americans, made use of its seed before corn and beans were introduced to America while making most of the offerings from the flower. Today, people have and still eat the seeds, ground the kernels into flour, and extract oils for their hair in shampoos and conditioners and for medicine as well. In other parts of the world such as Peru, the Aztecs would worship sunflowers and place images of them made of gold in their temples while crowning their princesses in bright yellow flowers.",
+    scientificName: "Helianthus annuus",
+    colors: "Yellow and Green",
+  }
+
+var birdInfo = {
+    history: "Birds of Paradise, shaped like a bird on a long petiole, the plant is grown outdoors in warm climates and as a houseplant for its attractive foliage and unusual flowers. It has been grown at the Royal Botanic Gardens in Kew, South Africa since 1773. Named by Sir Joseph Banks, the director of the Royal Gardens, the scientific name of the bird of paradise was Strelitzia reginae. The bird of paradise got its name from the fact that its flower was made of three bright orange petals which are fused into a single bud where they make their debut and shape resulting in the shape of a tropical bird in flight.",
+    scientificName: "Strelitzia",
+    colors: "Blue base petals arising from a dark green spathe, topped with an upright fan of bright orange sepals",
+  }
+
+var poppyInfo = {
+    history: "The poppy, a native flower of California, this plant was introduced into English gardens in the nineteenth century by Europeans, not only was the poppy a widely cultivated flower and gardens and landscapes for its beauty and resilience, but indigenous people of California revered the California poppy and used it for medicinal purposes, dyeing fabric, and as a mild sedative as well. You can find them on the roadside of Californias as well.",
+    scientificName: "Eschscholzia californica",
+    colors: "Orange",
+  }
+
+var deathInfo = {
+    history: "The Fremonts Deathcamas is a perennial herb that regrows each spring from an underground bulb with linear leaves and is primarily at the base of the plant. The flower is considered a geophyte as it is one of a group of herbaceous plants with storage organs beneath the soil that allow it to survive unfavorable conditions for extended periods. Unlike the other plants mentioned in this document, this plant is the only plant that is not eaten by the Native Americans as any parts of star lily and all other species are formerly in the genus Zigadenus are highly toxic where its only use is reported in anything almost invariably medicinal, occasionally ceremonial.",
+    scientificName: "Toxicoscordion fremontii",
+    colors: "White",
+  }
+
+var tulipInfo = {
+    history: "The tulips are natives of Central Asia and Turkeys and are among the most popular flowers amongst garden flowers with numerous cultivars and varieties that have been developed. They began in Persia (Iran) during the 10th century.",
+    scientificName: "Tulipa",
+    colors: "Red, purple, pink, yellow, orange, and white",
+  }
+
+var irisInfo = {
+    history: "The iris, A Greek translation for Rainbow, the flower which is another common flower you would find in the garden dates back to ancient Greece and was named after the goddess Iris. This was used to describe the flower that came in many colors.",
+    scientificName: "Iris",
+    colors: "Blue, purple, yellow, white, pink, orange, brown, and black.",
+  }
 
 function getFlowerInfo() {
     if (chosenFlower === daisies) {
@@ -51,7 +85,7 @@ function getFlowerInfo() {
     }
 };
 
-var info = getFlowerInfo();
+var flowerInfo = getFlowerInfo();
 
 $("#ask").click(function() {
     var question = $("#question").val();
@@ -60,7 +94,12 @@ $("#ask").click(function() {
     $("#main-page").show();
     $("#main-page").append('<div class="text"><p>' + question + '</p></div>');
     $("#main-page").append('<div class="yesOrNo">' + (yesNo ? "Yes" : "No") + '</div>');
-    $("#main-page").append('<div class="flowerInfo"><p>' + info + '</p></div>'); //add this line
+   $("#main-page").append('<div class="flowerInfo"><ul id="flowerInfoList"></ul></div>');
+    if (flowerInfo) {
+        $("#flowerInfoList").append('<li>History: ' + flowerInfo.history + '</li>');
+        $("#flowerInfoList").append('<li>Scientific Name: ' + flowerInfo.scientificName + '</li>');
+        $("#flowerInfoList").append('<li>Colors: ' + flowerInfo.colors + '</li>');
+    }
     $("#chosenFlower").attr('src', chosenFlower[0]);
 });
 
@@ -118,14 +157,14 @@ $("#chosenFlower").click(function() {
 $("#back").click(function() {
     $(".text").remove();
     $(".yesOrNo").remove();
-    $(".flowerInfo").remove(); //add this line
+    $(".flowerInfo").remove();
     $("#main-page").hide();
     $("#intro").show();
     $("#background1").show();
     $("#chosenFlower").show();
     $("#question").val('');
     chosenFlower = randomFlower(flowers);
-    info = getFlowerInfo(); //add this line
+    info = getFlowerInfo();
     yesNo = Math.random() < 0.5;
 });
 
