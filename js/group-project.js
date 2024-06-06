@@ -93,7 +93,7 @@ function getFlowerInfo() {
     }
 };
 
-var info = getFlowerInfo();
+var flowerInfo = getFlowerInfo();
 
 $("#ask").click(function() {
     var question = $("#question").val();
@@ -102,7 +102,13 @@ $("#ask").click(function() {
     $("#main-page").show();
     $("#main-page").append('<div class="text"><p>' + question + '</p></div>');
     $("#main-page").append('<div class="yesOrNo">' + (yesNo ? "Yes" : "No") + '</div>');
-    $("#main-page").append('<div class="flowerInfo"><p>' + info + '</p></div>'); //add this line
+   // $("#main-page").append('<div class="flowerInfo"><p>' + info + '</p></div>'); //add this line
+   $("#main-page").append('<div class="flowerInfo"><ul id="flowerInfoList"></ul></div>');
+    if (flowerInfo) {
+        $("#flowerInfoList").append('<li>History: ' + flowerInfo.history + '</li>');
+        $("#flowerInfoList").append('<li>Scientific Name: ' + flowerInfo.scientificName + '</li>');
+        $("#flowerInfoList").append('<li>Colors: ' + flowerInfo.colors + '</li>');
+    }
     $("#chosenFlower").attr('src', chosenFlower[0]);
 });
 
