@@ -139,16 +139,11 @@ document, body {
 }
 
 .text {
-    font-size: 28pt;
+    font-size: 20pt;
     top:0;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
-    display: inline-block;
-    width: 30%;
-    position: absolute;
-    right: 5%;
-    top: 20%;
 }
 
 .yesOrNO {
@@ -211,9 +206,9 @@ body {
     text-align: center;
     position: absolute;
     right: 5%;
-    top: 18%;
+    top: 10%;
     border: #462909 dotted 3px;
-    padding-left: 30px;
+    padding-right: 35px;
 }
 
 
