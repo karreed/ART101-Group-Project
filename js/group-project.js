@@ -64,7 +64,9 @@ const API_ENDPOINT = 'https://yesno.wtf/api';
 
 const showAnswer= (answer) => {
     $(".yesOrNo").remove();
-    $("#main-page").append('<div class="yesOrNo"><p>' + answer + '</p></div>')
+    $("#main-page").append('<div class="yesOrNo"><p>' + answer + '</p></div>');
+    $(".clickMe").remove();
+    $("#main-page").append('<div class="clickMe"><p>'+ "click the flower!" + '<p/></div>');
 };
 
 const fetchAnswer = () => {
@@ -97,9 +99,6 @@ $("#ask").click(function() {
     `);
     getFlowerInfo();
 });
-//syds bullshit, do not pay mindfor
-
-
 
 $(document).keydown(function(event) {
     if (event.key ==='Enter') {
@@ -136,6 +135,7 @@ $("#chosenFlower").click(function() {
     if (i == 0) {
         $("#chosenFlower").hide();
         $(".flowerInfo").remove();
+        $(".clickMe").remove();
         $("#credits").show();
     }
     $("#chosenFlower").attr('src', chosenFlower.images[i]);
