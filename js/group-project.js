@@ -76,7 +76,7 @@ const fetchAnswer = () => {
 function getFlowerInfo() {
     var flowerInfo = chosenFlower.info;
     if (flowerInfo) {
-        $("#flowerInfoList").empty().append(`
+        $("#flowerInfoList").append(`
             <li>History: ${flowerInfo.history}</li>
             <li>Scientific Name: ${flowerInfo.scientificName}</li>
             <li>Colors: ${flowerInfo.colors}</li>
