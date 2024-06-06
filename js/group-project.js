@@ -58,8 +58,20 @@ const flowers = [
 ];
 
 var i = 0;
-var yesNo = Math.random() < 0.5;
 var chosenFlower = flowers[Math.floor(Math.random() * flowers.length)];
+
+const API_ENDPOINT = 'https://yesno.wtf/api';
+
+const showAnswer= (answer) => {
+    $(".yesOrNo").remove();
+    $("#main-page").append('<div class="yesOrNo"><p>' + answer + '</p></div>')
+};
+
+const fetchAnswer = () => {
+    fetch(API_ENDPOINT)
+        .then(data => data.json())
+        .then(data => showAnswer(data.answer));
+};
 
 function getFlowerInfo() {
     var flowerInfo = chosenFlower.info;
@@ -78,9 +90,9 @@ var flowerInfo = getFlowerInfo();
 $("#ask").click(function() {
     var question = $("#question").val();
     $("#prompt, #background2").hide();
+    fetchAnswer();
     $("#main-page").show().append(`
         <div class="text"><p>${question}</p></div>
-        <div class="yesOrNo">${yesNo ? "Yes" : "No"}</div>
         <div class="flowerInfo"><ul id="flowerInfoList"></ul></div>
     `);
     getFlowerInfo();
@@ -110,7 +122,7 @@ $("#question").keypress(function(event) {
 
 $(document).keydown(function(event) {
     if (event.key === 'Backspace' || event.key === 'Escape') {
-        if ($("#main-page").is(':visible')) {
+        if ($("#credits").is(':visible')) {
             $("#back").click();
         }
     }
@@ -120,19 +132,19 @@ $("#chosenFlower").click(function() {
     i = (i + 1) % chosenFlower.images.length;
     if (i == 0) {
         $("#chosenFlower").hide();
+        $(".flowerInfo").remove();
+        $("#credits").show();
     }
     $("#chosenFlower").attr('src', chosenFlower.images[i]);
-    yesNo = !yesNo;
-    $(".yesOrNo").html((yesNo ? "Yes" : "No"));
+    fetchAnswer();
 })
 
 $("#back").click(function() {
-    $(".text, .yesOrNo, .flowerInfo").remove();
-    $("#main-page").hide();
+    $(".text, .yesOrNo").remove();
     $("#intro, #background1").show();
-    $("#chosenFlower").show();
+    $("#credits").hide();
     $("#question").val('');
+    $("#chosenFlower").show();
     chosenFlower = flowers[Math.floor(Math.random() * flowers.length)];
-    yesNo = Math.random() < 0.5;
 });
 

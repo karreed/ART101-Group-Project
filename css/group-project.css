@@ -61,6 +61,11 @@ document, body {
     padding-bottom: 50px;
     columns: 3;
 }
+
+#credits {
+    display: none;
+    text-align: center;
+}
 /* #main-page controls the yesOrNo text CSS as well*/
 /* syds button mashing, unsure if this is totally conventional but it works!*/
 
