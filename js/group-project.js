@@ -65,8 +65,6 @@ const API_ENDPOINT = 'https://yesno.wtf/api';
 const showAnswer= (answer) => {
     $(".yesOrNo").remove();
     $("#main-page").append('<div class="yesOrNo"><p>' + answer + '</p></div>');
-    $(".clickMe").remove();
-    $("#main-page").append('<div class="clickMe"><p>'+ "click the flower!" + '<p/></div>');
 };
 
 const fetchAnswer = () => {
@@ -78,7 +76,7 @@ const fetchAnswer = () => {
 function getFlowerInfo() {
     var flowerInfo = chosenFlower.info;
     if (flowerInfo) {
-        $("#flowerInfoList").append(`
+        $("#flowerInfoList").empty().append(`
             <li>History: ${flowerInfo.history}</li>
             <li>Scientific Name: ${flowerInfo.scientificName}</li>
             <li>Colors: ${flowerInfo.colors}</li>
@@ -95,8 +93,9 @@ $("#ask").click(function() {
     fetchAnswer();
     $("#main-page").show().append(`
         <div class="text"><p>${question}?</p></div>
+        <div class="clickMe"><p>click the flower!<p/></div>
         <div class="flowerInfo"><ul id="flowerInfoList"></ul></div>
-    `);
+        `);
     getFlowerInfo();
 });
 
