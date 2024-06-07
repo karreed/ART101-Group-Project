@@ -211,6 +211,11 @@ body {
     color: #fff;
 }
 
+#main-page {
+    background-image: url(../notebook/notebook.jpg);
+    background-size: cover;
+}
+
 #main-page .flowerInfo {
     font-size: 14px;
     display: flex;
