@@ -230,6 +230,11 @@ body {
     padding-right: 35px;
 }
 
+#main-page {
+    height: 100%;
+    
+}
+
 #flowerButton img{
     background: none;
     display: flex;
@@ -243,5 +248,8 @@ body {
     margin-bottom: 10%;
 }
 
-
-
+#credits{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    height: 100%;
+}
