@@ -230,6 +230,10 @@ body {
     padding-right: 35px;
 }
 
+.flowerInfo{
+    background-color: #C8D6AF;
+}
+
 #flowerButton img{
     background: none;
     display: flex;
