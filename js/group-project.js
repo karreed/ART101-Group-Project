@@ -106,6 +106,7 @@ var flowerInfo = getFlowerInfo();
 $("#ask").click(function() {
     var question = $("#question").val();
     $("#prompt, #background2").hide();
+    $("#background3").show();
     fetchAnswer();
     $("#main-page").show().append(`
         <div class="text"><p>${question}?</p></div>
@@ -152,6 +153,7 @@ $("#chosenFlower").click(function() {
         $(".flowerInfo").remove();
         $(".clickMe").remove();
         $("#credits").show();
+        $("#background3").show();
     }
     $("#chosenFlower").attr('src', chosenFlower.images[i]);
     fetchAnswer();
@@ -162,6 +164,7 @@ $("#back").click(function() {
     $("#intro, #background1").show();
     $("#credits").hide();
     $("#question").val('');
+    $("#background3").hide();
     $("#chosenFlower").show();
     chosenFlower = flowers[Math.floor(Math.random() * flowers.length)];
 });
