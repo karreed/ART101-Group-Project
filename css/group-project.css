@@ -247,5 +247,11 @@ body {
     margin-bottom: 10%;
 }
 
+#pixelCredit {
+    width: 30px;
+    height: 30px;
+    border-color: #304b02;
+    border-width: 5px ;
+}
 
 
