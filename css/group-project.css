@@ -80,9 +80,7 @@ document, body {
 
 #credits {
     display: none;
-    text-align: center;
-    margin-left: 22%;
-    width: 30%;
+    text-align: left;
 }
 /* #main-page controls the yesOrNo text CSS as well*/
 /* syds button mashing, unsure if this is totally conventional but it works!*/
