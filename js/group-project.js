@@ -101,10 +101,10 @@ function getFlowerInfo() {
         $("#flowerInfoList").append(`
             <li>Name: ${flowerInfo.name}</li>
             <li>Genus: ${flowerInfo.genus}</li>
+            <li>Colors: ${flowerInfo.colors}</li>
             <li>Scientific Name: ${flowerInfo.scientificName}</li>
             <li>History: ${flowerInfo.history}</li>
             <li>Meaning: ${flowerInfo.meaning}</li>
-            <li>Colors: ${flowerInfo.colors}</li>
             `);
     }
     $("#chosenFlower").attr('src', chosenFlower.images[0]);
