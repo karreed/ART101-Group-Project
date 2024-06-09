@@ -6,7 +6,8 @@ const flowers = [
             meaning: "They serve as a symbol of innocence and purity while symbolizing new beginnings and its bright spirit-lifting colors are known to spread happiness like wildfire.",
             genus: "Bellis",
             scientificName: "Bellis perennis",
-            colors: "Blue base petals arising from a dark green spathe, topped with an upright fan of bright orange sepals"
+            colors: "Blue base petals arising from a dark green spathe, topped with an upright fan of bright orange sepals",
+            name: "Daisy"
         }
     },
     {
@@ -16,7 +17,8 @@ const flowers = [
             meaning: "Happiness, optimism, strength and loyalty.",
             genus: "Asteraceae",
             scientificName: "Helianthus annuus",
-            colors: "Yellow and Green"
+            colors: "Yellow and Green",
+            name: "Sunflower"
         }
     },
     {
@@ -26,7 +28,8 @@ const flowers = [
             meaning: "Joyfulness, paradise, freedom, anticipation, and excitement",
             genus: "Rhizomes",
             scientificName: "Strelitzia",
-            colors: "Blue base petals arising from a dark green spathe, topped with an upright fan of bright orange sepals"
+            colors: "Blue base petals arising from a dark green spathe, topped with an upright fan of bright orange sepals",
+            name: "Birds of Paradise"
         }
     },
     {
@@ -36,7 +39,8 @@ const flowers = [
             meaning: "Resilience",
             genus: "Eschscholzia",
             scientificName: "Eschscholzia californica",
-            colors: "Orange"
+            colors: "Orange",
+            name: "Poppy"
         }
     },
     {
@@ -46,7 +50,8 @@ const flowers = [
             meaning: "Toxicity (toxikos) and skordion (garcli)",
             genus: "Zigadenus",
             scientificName: "Toxicoscordion fremontii",
-            colors: "White"
+            colors: "White",
+            name: "Deathcamas"     
         }
     },
     {
@@ -56,7 +61,9 @@ const flowers = [
             meaning: "Perfect and deep love.",
             genus: "Tulipa",
             scientificName: "Tulipa",
-            colors: "Red, purple, pink, yellow, orange, and white"
+            colors: "Red, purple, pink, yellow, orange, and white",
+            name: "Tulip"
+
         }
     },
     {
@@ -66,7 +73,8 @@ const flowers = [
             meaning: "All three petals of the flower were thought to stand for faith, wisdom, and valor",
             genus: "Iridaceae",
             scientificName: "Iris",
-            colors: "Blue, purple, yellow, white, pink, orange, brown, and black."
+            colors: "Blue, purple, yellow, white, pink, orange, brown, and black.",
+            name: "Iris"
         }
     }
 ];
@@ -91,10 +99,11 @@ function getFlowerInfo() {
     var flowerInfo = chosenFlower.info;
     if (flowerInfo) {
         $("#flowerInfoList").append(`
-            <li>History: ${flowerInfo.history}</li>
-            <li>Meaning: ${flowerInfo.meaning}</li>
+            <li>Name: ${flowerInfo.name}</li>
             <li>Genus: ${flowerInfo.genus}</li>
             <li>Scientific Name: ${flowerInfo.scientificName}</li>
+            <li>History: ${flowerInfo.history}</li>
+            <li>Meaning: ${flowerInfo.meaning}</li>
             <li>Colors: ${flowerInfo.colors}</li>
             `);
     }
