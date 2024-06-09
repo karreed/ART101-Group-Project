@@ -54,9 +54,6 @@ document, body {
     display: none;
     padding-bottom: 50px;
     columns: 3;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 #main-page .yesOrNo {
@@ -84,8 +81,8 @@ document, body {
 #credits {
     display: none;
     text-align: center;
-    align-self: flex-end;
-
+    margin-left: 22%;
+    width: 30%;
 }
 /* #main-page controls the yesOrNo text CSS as well*/
 /* syds button mashing, unsure if this is totally conventional but it works!*/
