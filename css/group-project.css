@@ -84,7 +84,6 @@ document, body {
 #credits {
     display: none;
     text-align: center;
-    align-self: flex-end;
 
 }
 /* #main-page controls the yesOrNo text CSS as well*/
